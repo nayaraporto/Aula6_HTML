@@ -9,50 +9,70 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: lightblue;
+      background-color: #cce7ff;
     }
 
     header {
-      background-color: navy;
+      background-color: #003366;
       color: white;
-      padding: 10px;
+      padding: 15px;
+      text-align: center;
     }
 
     nav ul {
       list-style: none;
-      margin: 0;
+      margin: 10px 0 0;
       padding: 0;
       display: flex;
-      gap: 10px;
+      justify-content: center;
+      gap: 20px;
     }
 
     nav a {
       color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     main {
-      padding: 15px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     section {
       background: white;
-      padding: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+
+    }
+
+    h2,
+    h3 {
+      color: #003366;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      display: block;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+
+    article {
       margin-bottom: 15px;
+      padding: 10px;
+      background: #f0f8ff;
+      border-radius: 6px;
     }
 
     footer {
-      background: navy;
+      background: #003366;
       color: white;
       text-align: center;
-      padding: 10px;
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    video {
-      max-width: 100%;
+      padding: 15px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -64,7 +84,8 @@
       <ul>
         <li><a href="#Destinos">Destinos</a></li>
         <li><a href="#Galeria">Galeria</a></li>
-        <li><a href="#VVideos">Vídeos</a></li>
+        <li><a href="#Videos">Vídeos</a></li>
+        <li><a href="#artigos">Artigos</a></li>
         <li><a href="#Contato">Contato</a></li>
       </ul>
     </nav>
@@ -75,23 +96,26 @@
       <h2>Destinos Incríveis</h2>
       <p>Explore lugares maravilhosos pelo mundo: praias paradisíacas, cidades históricas e paisagens de tirar o fôlego.
       </p>
-      <img src="guia-chile.jpg" alt="Chile">
+      <img src="guia-chile.jpg" alt="Paisagem do Chile">
+    </section>
 
+    <section id="Galeria">
       <h2>Galeria de Fotos</h2>
-      <img src="santiago.jpg" alt="Cidade">
-      <img src="montanhas.jpeg" alt="Montanha ">
+      <img src="santiago.jpg" alt="Cidade histórica em Santiago">
+      <img src="montanhas.jpeg" alt="Montanhas espetaculares">
+    </section>
 
-      <h3>Vídeo local</h3>
-      <video width="560" height="315" controls>
-        <source src="https://www.youtube.com/embed/WhnKONpwpok?si=QTVKs9FYmd6vgYSD" title="YouTube video player"
-          type="video/mp4">
+    <section id="Videos">
+      <h2>Vídeos de Viagem</h2>
+      <h3>Vídeo Local</h3>
+      <video controls>
+        <source src="videos/minha-viagem.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
       </video>
 
       <h3>Vídeo do YouTube</h3>
-      <video width="560" height="315" controls>
-        <source src="https://www.youtube.com/embed/-S3NP0aNzII?si=ez4cT8-TXyvL70wd" title="YouTube video player"
-          type="video/mp4">
-      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-S3NP0aNzII" title="Vídeo do YouTube"
+        frameborder="0" allowfullscreen></iframe>
     </section>
 
     <section id="artigos">
@@ -115,8 +139,9 @@
   </main>
 
   <footer>
-    <p>2025 Viaje pelo Mundo. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Travel the World. Todos os direitos reservados.</p>
   </footer>
 </body>
 
 </html>
+
