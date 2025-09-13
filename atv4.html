@@ -1,19 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow</title>
-</head>
-<body>
-    <nav>
-  <ul>
-    <li><a href="#inicio">Início</a></li>
-    <li><a href="#sobre">Sobre Nós</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
+<!doctype html>
+<html lang="pt-BR">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Travel the World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+    }
+
+    header {
+      background-color: navy;
+      color: white;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+    }
+
+    main {
+      padding: 15px;
+    }
+
+    section {
+      background: white;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: navy;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    video {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Bem-vindo à Travel the World</h1>
+    <nav>
+      <ul>
+        <li><a href="#Destinos">Destinos</a></li>
+        <li><a href="#Galeria">Galeria</a></li>
+        <li><a href="#VVideos">Vídeos</a></li>
+        <li><a href="#Contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="Destinos">
+      <h2>Destinos Incríveis</h2>
+      <p>Explore lugares maravilhosos pelo mundo: praias paradisíacas, cidades históricas e paisagens de tirar o fôlego.
+      </p>
+      <img src="guia-chile.jpg" alt="Chile">
+
+      <h2>Galeria de Fotos</h2>
+      <img src="santiago.jpg" alt="Cidade">
+      <img src="montanhas.jpeg" alt="Montanha ">
+
+      <h3>Vídeo local</h3>
+      <video width="560" height="315" controls>
+        <source src="https://www.youtube.com/embed/WhnKONpwpok?si=QTVKs9FYmd6vgYSD" title="YouTube video player"
+          type="video/mp4">
+      </video>
+
+      <h3>Vídeo do YouTube</h3>
+      <video width="560" height="315" controls>
+        <source src="https://www.youtube.com/embed/-S3NP0aNzII?si=ez4cT8-TXyvL70wd" title="YouTube video player"
+          type="video/mp4">
+      </video>
+    </section>
+
+    <section id="artigos">
+      <h2>Artigos de Viagem</h2>
+      <article>
+        <h3>5 Dicas para Viajar Econômico</h3>
+        <p>Descubra como planejar suas viagens gastando menos sem abrir mão de experiências incríveis. Inclui dicas
+          sobre hospedagem, transporte e alimentação.</p>
+      </article>
+      <article>
+        <h3>Top 10 Praias Paradisíacas</h3>
+        <p>Conheça praias ao redor do mundo com águas cristalinas e paisagens de tirar o fôlego. Ideal para quem busca
+          relaxar e se desconectar.</p>
+      </article>
+      <article>
+        <h3>Como Explorar Cidades Históricas</h3>
+        <p>Guia prático para visitar cidades históricas aproveitando ao máximo a cultura, gastronomia e pontos
+          turísticos, sem se perder nos detalhes.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 Viaje pelo Mundo. Todos os direitos reservados.</p>
+  </footer>
 </body>
+
 </html>
